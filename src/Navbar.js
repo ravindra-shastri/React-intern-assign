@@ -36,7 +36,6 @@ const items = [
 ];
 
 
-
 function Navbar() {
   const [current, setCurrent] = useState('6');
   const onClick = (e) => {

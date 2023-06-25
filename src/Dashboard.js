@@ -4,30 +4,6 @@ import { Input, Button, Radio } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
 
 
-// const data = [
-//   {
-//     name: "Dotcom.inc",
-//     date: "",
-//     type: "Automatic Payment",
-//     status: "Done",
-//     amount: 99
-//   },
-//   {
-//     name: "Dotcom.inc",
-//     date: "",
-//     type: "Cash Payment",
-//     status: "Done",
-//   },
-//   {
-//     name: "Dotcom.inc",
-//     date: "",
-//     type: "Automatic Payment",
-//     status: "Not Done",
-//   }
-// ]
-
-
-
 const options = [
   {
     label: 'Date: Last 90 days',
@@ -47,10 +23,10 @@ const options = [
 
 function Dashboard() {
 
-  const [value, setValue] = useState('Apple');
+  const [value, setValue] = useState('Status');
 
   const onChange = ({ target: { value } }) => {
-    console.log('radio4 checked', value);
+    console.log('checked', value);
     setValue(value);
   };
 
@@ -65,7 +41,7 @@ function Dashboard() {
         </div>
       </div>
       <div className="filter-item-container">
-        <p style={{ margin: "1rem 0",fontWeight:"500",fontSize:".8rem" }}>Filter by</p>
+        <p style={{ margin: "1rem 0", fontWeight: "500", fontSize: ".8rem" }}>Filter by</p>
         <div>
           <Radio.Group
             options={options}
@@ -75,21 +51,21 @@ function Dashboard() {
             buttonStyle="solid"
           />
         </div>
-        <p style={{fontWeight:"600",fontSize:".8rem",letterSpacing:"6" }}>Completed</p>
-        <p style={{ color: "grey" }}>This week</p>
+        <p style={{ fontWeight: "600", fontSize: ".8rem", letterSpacing: "6" }}>Completed</p>
+        <p style={{ color: "grey", fontSize: ".8rem" }}>This week</p>
 
         <div className='filter-detail-content'>
           <div style={{ display: "flex" }}>
             <div>
-              <img className='filtered-img'src="./img1.jpg" alt="img" />
+              <img className='filtered-img' src="./img1.jpg" alt="img" />
             </div>
-            <div style={{marginTop:".8rem"}}>
-              <p style={{fontWeight:"600",fontSize:".8rem" }}>Name.com Inc.</p>
-              <p style={{fontWeight:"",fontSize:".7rem" }}>Jun 22 Automatic Payment</p>
+            <div style={{ marginTop: ".8rem" }}>
+              <p style={{ fontWeight: "600", fontSize: ".8rem" }}>Name.com Inc.</p>
+              <p style={{ fontWeight: "", fontSize: ".7rem" }}>Jun 22 Automatic Payment</p>
             </div>
           </div>
           <div>
-            <p style={{fontWeight:"600",fontSize:".8rem",marginTop:"1.8rem" }}>
+            <p style={{ fontWeight: "600", fontSize: ".8rem", marginTop: "1.8rem" }}>
               -$9.89
             </p>
           </div>
@@ -99,13 +75,13 @@ function Dashboard() {
             <div>
               <img className='filtered-img' src="./img1.jpg" alt="./img" />
             </div>
-            <div style={{marginTop:".8rem"}}>
-              <p style={{fontWeight:"600",fontSize:".8rem" }}>Name.com Inc.</p>
-              <p style={{fontWeight:"",fontSize:".7rem" }}>Jun 22 Automatic Payment</p>
+            <div style={{ marginTop: ".8rem" }}>
+              <p style={{ fontWeight: "600", fontSize: ".8rem" }}>Name.com Inc.</p>
+              <p style={{ fontWeight: "", fontSize: ".7rem" }}>Jun 22 Automatic Payment</p>
             </div>
           </div>
           <div>
-            <p style={{fontWeight:"600",fontSize:".8rem",marginTop:"1.8rem" }}>
+            <p style={{ fontWeight: "600", fontSize: ".8rem", marginTop: "1.8rem" }}>
               -$9.89
             </p>
           </div>
@@ -115,13 +91,13 @@ function Dashboard() {
             <div>
               <img className='filtered-img' src="./img1.jpg" alt="./img" />
             </div>
-            <div style={{marginTop:".8rem"}}>
-              <p style={{fontWeight:"600",fontSize:".8rem" }}>Name.com Inc.</p>
-              <p style={{fontWeight:"",fontSize:".7rem" }}>Jun 22 Automatic Payment</p>
+            <div style={{ marginTop: ".8rem" }}>
+              <p style={{ fontWeight: "600", fontSize: ".8rem" }}>Name.com Inc.</p>
+              <p style={{ fontWeight: "", fontSize: ".7rem" }}>Jun 22 Automatic Payment</p>
             </div>
           </div>
           <div>
-            <p style={{fontWeight:"600",fontSize:".8rem",marginTop:"1.8rem" }}>
+            <p style={{ fontWeight: "600", fontSize: ".8rem", marginTop: "1.8rem" }}>
               -$9.89
             </p>
           </div>

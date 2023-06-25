@@ -30,30 +30,32 @@
   color: rgb(240, 237, 237);
   font-size: .7rem;
 }
+
 .ant-menu {
   width: 50%;
   background-color: #142C8F !important;
   color: rgb(240, 237, 237);
   border-bottom: none;
-
 }
-.ant-menu-item {
+
+.ant-menu :hover {
+  color: rgb(240, 237, 237);
   border-bottom: none;
 }
 
 .ant-menu-item-selected {
-  background-color: #27419B !important;
-  color: #FFF;
-  border-radius: 4rem;
+  background-color: #1e3dad !important;
+  color: #FFF !important;
+  border-radius: 2rem !important;
 }
 
 .ant-menu-submenu-open::after {
   border-bottom-width: 0;
 }
 
+.ant-menu-submenu:hover {
+  border-bottom-width: 0;
 
-.search-icon {
-  color: rgb(102, 100, 100);
 }
 
 .dashboard-container {
@@ -77,12 +79,11 @@
   background-color: #FFF;
   margin-left: 1rem;
   color: rgb(80, 78, 78);
-  padding-right: 27rem;
+  padding-right: 29.9rem;
   padding-left: 1rem;
   padding-top: .4rem;
   padding-bottom: .4rem;
   border-radius: 2rem;
-
 }
 
 .download-icon-content {
@@ -103,6 +104,7 @@
   border-bottom-width: 0px;
 }
 
+
 .ant-radio-button-wrapper {
   position: static;
   margin: .4rem;
@@ -120,15 +122,38 @@
   border-end-start-radius: 1rem;
 }
 
+.ant-radio-button-wrapper {
+  color: #3E52A3;
+  font-size: .8rem;
+}
+
+.ant-radio-button-wrapper:hover {
+  position: static;
+}
+
 .ant-radio-button-wrapper:last-child {
   border-inline-start: 1px solid #d9d9d9;
   border-start-end-radius: 1rem;
   border-end-end-radius: 1rem;
+  position: static;
 }
 
-.ant-radio-button{
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: #3E52A3;
+  background: #D1F2FF;
+  border-color: #D1F2FF;
+}
+
+.ant-radio-group-solid :where(.css-dev-only-do-not-override-1wazalj).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  color: #3E52A3;
+  background: #D1F2FF;
+  border-color: #D1F2FF;
+}
+
+.ant-radio-button {
   color: #122A8E;
 }
+
 .ant-menu-horizontal {
   line-height: 3.1rem;
 }
@@ -141,7 +166,6 @@
 .filter-detail-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 -2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: .6rem;
